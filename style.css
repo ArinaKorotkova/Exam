@@ -1,0 +1,20 @@
+table .odd 
+{
+	background-color:antiquewhite ;
+}
+ 
+table .even 
+{
+	background:burlywood;
+}
+
+thead
+{
+    text-align:center;
+    background-color:#f2c329;
+}
+
+tbody
+{
+    text-align:center;
+}

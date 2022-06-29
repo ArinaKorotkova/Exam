@@ -77,7 +77,7 @@
                 </td>
             </tr>
             <tr class="line">
-                <th scope="row">2</th>
+                <th scope="row">3</th>
                 <td>Шестерня</td>
                 <td>Короткова Арина</td>
                 <td>Данная работа была выполнена........</td>
@@ -88,8 +88,9 @@
 
     <footer class="page-footer font-small blue">
         <footer class="page-footer font-small blue fixed-bottom">
-            <div class="footer-copyright text-center py-3 bg-warning"> Короткова Арина Константинована, 201-323.
-                Экзаменационная работа, вариант 2</div>
+            <div class="footer-copyright text-center py-3 bg-warning"> 
+                Короткова Арина Константинована, 201-323.
+            </div>
         </footer>
 
     </footer>
@@ -113,6 +114,22 @@
 			table_tr[i].className = 'odd';
 		    }
 	    }
+    }
+</script>
+
+<script>
+    var checkboxElements = document.getElementsByClassName("checkbox");
+    console.log(checkboxElements.length);
+    for (var i = 0; i < checkboxElements.length; i++)
+    {
+        checkboxElements[i].addEventListener('change', function () {
+            if (this.checked) {
+                this.closest('tr').style.textDecoration = 'line-through';
+            }
+            else {
+                this.closest('tr').style.textDecoration = 'none';
+            }
+        });
     }
 </script>
 
